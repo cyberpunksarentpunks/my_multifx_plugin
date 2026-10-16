@@ -1,0 +1,11 @@
+build/
+cmake-build-*/
+.idea/
+.vscode/
+*.user
+.DS_Store
+JUCE/
+_deps/
+compile_commands.json
+*.vst3
+CMakeUserPresets.json
