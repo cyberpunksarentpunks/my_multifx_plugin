@@ -51,6 +51,8 @@ target_sources(AetherTone
         Source/dsp/modules/DelayModule.cpp
         Source/dsp/modules/ReverbModule.cpp
         Source/dsp/modules/AmbientModule.cpp
+        Source/dsp/modules/GranularModule.cpp
+        Source/dsp/modules/ShoegazeModule.cpp
         Source/dsp/modules/EqModule.cpp
         Source/dsp/modules/CabinetModule.cpp
         Source/dsp/modules/OutputModule.cpp

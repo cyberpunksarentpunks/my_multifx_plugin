@@ -43,6 +43,15 @@ juce::Array<FactoryPreset> getFactoryPresets()
         mod("output", { { "width", 1.25f }, { "limit", 1.0f } })
     }));
 
+    list.add(makePreset("Guitar-to-Synth Bloom", {
+        mod("input", { { "gain", 2.2f }, { "saturate", 0.12f } }),
+        mod("granular", { { "density", 2.8f }, { "grainSize", 120.0f }, { "pitch", 7.0f }, { "spread", 0.7f }, { "mix", 0.46f }, { "feedback", 0.24f }, { "cutoff", 2600.0f }, { "shimmer", 0.18f } }),
+        mod("shoegaze", { { "drive", 0.8f }, { "mix", 0.55f }, { "feedback", 0.62f }, { "shimmer", 0.4f }, { "cutoff", 2400.0f }, { "spread", 0.7f }, { "damp", 0.3f }, { "pan", 0.0f } }),
+        mod("reverb", { { "decay", 0.92f }, { "predelay", 38.0f }, { "damp", 0.22f }, { "size", 1.75f }, { "width", 1.4f }, { "mix", 0.48f }, { "shimmer", 0.34f } }),
+        mod("eq", { { "lowGain", -2.0f }, { "midGain", 1.0f }, { "highGain", 1.5f } }),
+        mod("output", { { "gain", -1.0f }, { "width", 1.35f }, { "limit", 1.0f } })
+    }));
+
     list.add(makePreset("Shimmering Cathedral", {
         mod("input", { { "gain", 0.0f }, { "saturate", 0.05f } }),
         mod("reverb", { { "decay", 0.94f }, { "predelay", 55.0f }, { "damp", 0.18f }, { "size", 1.85f }, { "width", 1.5f }, { "mix", 0.58f }, { "shimmer", 0.55f } }),
