@@ -52,6 +52,15 @@ juce::Array<FactoryPreset> getFactoryPresets()
         mod("output", { { "gain", -1.0f }, { "width", 1.35f }, { "limit", 1.0f } })
     }));
 
+    list.add(makePreset("CosmicSpace Drift", {
+        mod("input", { { "gain", 1.8f }, { "saturate", 0.1f } }),
+        mod("drive", { { "drive", 0.22f }, { "tone", 0.5f }, { "output", -4.0f }, { "character", 0.0f } }),
+        mod("cosmicspace", { { "decay", 0.91f }, { "predelay", 28.0f }, { "size", 2.1f }, { "diffusion", 0.82f }, { "width", 1.65f }, { "mix", 0.52f }, { "shimmer", 0.46f }, { "modRate", 0.12f }, { "depth", 0.7f }, { "cutoff", 1200.0f } }),
+        mod("ambient", { { "volume", -12.0f }, { "mix", 0.3f }, { "cutoff", 640.0f }, { "pitch", 40.0f }, { "track", 0.75f }, { "modRate", 0.06f } }),
+        mod("eq", { { "lowGain", -1.5f }, { "midGain", -0.5f }, { "highGain", 1.2f } }),
+        mod("output", { { "gain", -1.5f }, { "width", 1.6f }, { "limit", 1.0f } })
+    }));
+
     list.add(makePreset("Shimmering Cathedral", {
         mod("input", { { "gain", 0.0f }, { "saturate", 0.05f } }),
         mod("reverb", { { "decay", 0.94f }, { "predelay", 55.0f }, { "damp", 0.18f }, { "size", 1.85f }, { "width", 1.5f }, { "mix", 0.58f }, { "shimmer", 0.55f } }),
