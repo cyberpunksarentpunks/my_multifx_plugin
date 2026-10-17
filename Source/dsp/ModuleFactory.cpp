@@ -8,6 +8,7 @@
 #include "modules/GranularModule.h"
 #include "modules/ShoegazeModule.h"
 #include "modules/CosmicSpaceModule.h"
+#include "modules/ConsolePreampModule.h"
 #include "modules/EqModule.h"
 #include "modules/CabinetModule.h"
 #include "modules/OutputModule.h"
@@ -24,6 +25,7 @@ std::unique_ptr<FxModule> createModule(const juce::String& typeId)
     else if (typeId == "granular") m = std::make_unique<GranularModule>();
     else if (typeId == "shoegaze") m = std::make_unique<ShoegazeModule>();
     else if (typeId == "cosmicspace") m = std::make_unique<CosmicSpaceModule>();
+    else if (typeId == "consolepreamp") m = std::make_unique<ConsolePreampModule>();
     else if (typeId == "eq") m = std::make_unique<EqModule>();
     else if (typeId == "cabinet") m = std::make_unique<CabinetModule>();
     else if (typeId == "output") m = std::make_unique<OutputModule>();
@@ -36,7 +38,7 @@ std::unique_ptr<FxModule> createModule(const juce::String& typeId)
 
 juce::StringArray allModuleTypeIds()
 {
-    return { "drive", "modulation", "delay", "reverb", "ambient", "granular", "shoegaze", "cosmicspace", "eq", "cabinet" };
+    return { "drive", "modulation", "delay", "reverb", "ambient", "granular", "shoegaze", "cosmicspace", "consolepreamp", "eq", "cabinet" };
 }
 
 juce::String displayNameForType(const juce::String& typeId)
